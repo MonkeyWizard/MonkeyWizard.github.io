@@ -9,13 +9,14 @@
            
         }
   #flower {
-      width:565px;
-      position:relative;
-      top: 5px;
-      left: 5px;
-      z-index:1;
+    position:absolute;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    border:5px double pink;
+    
   }
-  
   h5 {
       position:absolute;
       z-index:2;
@@ -33,67 +34,70 @@
       font-size:46px;
   }
   
-  #h3 {
+  #address {
       position:absolute;
-      width:100%;
       z-index:2;
-      bottom:-215px;
-      left:67px;
+      width:100%;
+      left:15%;
+      top:150%;
+      
+      
       
   }
    
-   #h33 {
-       position:absolute;
-       width:100%;
-       z-index:2;
-       bottom:-312px;
-       left:78px;
-       text-align:left;
+   #date {
+      position:absolute;
+      z-index:2;
+      width:100%;
+      left:15%;
+      top:180%;
    }
    
    b {
-       position:absolute;
+       
        width:100%;
        z-index:2;
-       text-align:right;
-       bottom:-196px;
-       right:100px;
+       
        
          }
          
-         #list {
-             position:absolute;
+         #activities {
              width:35%;
-             right:5px;
-             bottom:-328px;
              z-index:2;
          }
+         
+        .list {
+            position:absolute;
+            width:100%;
+            left:65%;
+            top:155%;
+        }
    
         </style>
     </head>
     <body>
     
-   <div class="image">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Pink_Gerbera_%285888414978%29.jpg" id="flower">
-   <div class="text"></div>
-   </div>
+  
+   <div><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Pink_Gerbera_%285888414978%29.jpg" id="flower"></div>
+   
+  
    <h5>You're invited to</h5>
         
     <h1>Sadie's Birthday Party!</h1>
   
-        <h3 id="h3">9900 Tootering Rock</h3>
+        <h3 id="address">9900 Tootering Rock</h3>
         
-        <h3 id="h33">Saturday, June 22</h3>
+        <h3 id="date">Saturday, June 22</h3>
         
-        <b>Activities</b>
+        <div class="list"><b>Activities</b>
         
-        <ul id="list">
+        <ul id="activities">
             <li>Water Hot Potato
             <li>Cake
             <li>Presents
             <li>Lunch
             <li>Princess Appearance
         </ul>
-        
+       </div>
     </body>
 </html>
